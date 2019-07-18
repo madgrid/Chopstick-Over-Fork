@@ -38,13 +38,13 @@ class DetailsPage extends StatelessWidget {
             physics: BouncingScrollPhysics(),
             child: Column(
               children: <Widget>[
-                Text('Nutrition',
+                Text('Info',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 20)),
                 NutritionWidget(
-                  nutrients: recipe.nutrients,
+                  info: recipe.info,
                 ),
                 Text('Ingredients',
                     style: TextStyle(
@@ -142,20 +142,20 @@ class IngredientsWidget extends StatelessWidget {
 }
 
 class NutritionWidget extends StatelessWidget {
-  final List<Nutrients> nutrients;
-  NutritionWidget({this.nutrients});
+  final List<Info> info;
+  NutritionWidget({this.info});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 86,
       width: double.infinity,
       child: ListView.builder(
-        itemCount: nutrients.length,
+        itemCount: info.length,
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
         physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
-          return CircleIndicator(percent: nutrients[index].percent,nutrient: nutrients[index],);
+          return CircleIndicator(percent: info[index].percent,info: info[index],);
         },
       ),
     );
