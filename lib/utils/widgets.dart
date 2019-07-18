@@ -4,9 +4,9 @@ import 'package:chopstick_over_fork/utils/class.dart';
 
 class CircleIndicator extends StatefulWidget {
   final double percent;
-  final Nutrients nutrient;
+  final Info info;
 
-  CircleIndicator({this.percent = 0.5,this.nutrient});
+  CircleIndicator({this.percent = 0.5,this.info});
   @override
   _CircleIndicatorState createState() => _CircleIndicatorState();
 }
@@ -43,8 +43,8 @@ class _CircleIndicatorState extends State<CircleIndicator>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(widget.nutrient.name,style: TextStyle(color: Colors.white),),
-                Text(widget.nutrient.weight,style: TextStyle(color: Colors.white),),
+                Text(widget.info.name,style: TextStyle(color: Colors.white),),
+                Text(widget.info.subInfo,style: TextStyle(color: Colors.white),),
               ],
             ),
           ),
