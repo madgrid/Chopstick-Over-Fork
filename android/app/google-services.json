@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "3025158732",
+    "firebase_url": "https://chopstick-over-fork.firebaseio.com",
+    "project_id": "chopstick-over-fork",
+    "storage_bucket": "chopstick-over-fork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3025158732:android:7e17de43867ecc98",
+        "android_client_info": {
+          "package_name": "com.example.chopstick_over_fork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3025158732-12buler9ir5u2fcsp2n6b5fq9fhlk2kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-5uGcxI9koVJSTrWimtl18BbLKwQA8QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3025158732-12buler9ir5u2fcsp2n6b5fq9fhlk2kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
